@@ -13,7 +13,7 @@ def about():
 
 @app.route('/about/<string:name>/<int:years>')
 def teamname(name ,years):
-    return f'Hello {name}, you have {str(years)} experience in NexAI'
+    return f'Hello {name}, you have {years} experience in NexAI'
 
 if __name__ == '__main__':
     app.run(debug=True)
